@@ -59,7 +59,7 @@ public class CounterController {
         return counterService.getCounterValue(name);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/counters/total", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.GET, path = "/counters", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public TotalCountResponse getAllCountersValues() {
